@@ -1,0 +1,7 @@
+32강 스크립트
+-----------------------------------------------------------------------------------------
+yum update -y
+yum install -y httpd
+systemctl start httpd
+systemctl enable httpd
+echo "<h1>Heelo world from $(hostname -f)</h1>" | sudo tee -a /var/www/html/index.html
